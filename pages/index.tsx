@@ -37,17 +37,20 @@ const Blog: React.FC<Props> = (props) => {
         </main>
       </div>
       <style jsx>{`
-        .post {
-          background: white;
-          transition: box-shadow 0.1s ease-in;
+        .page {
+          padding-top: 3rem;
         }
 
-        .post:hover {
-          box-shadow: 1px 1px 3px #aaa;
+        h1 {
+          font-size: 1.75rem;
+          font-weight: 500;
+          margin: 0 0 2.5rem 0;
+          color: #2c2c2c;
+          letter-spacing: 0.02em;
         }
 
         .post + .post {
-          margin-top: 2rem;
+          margin-top: 1.5rem;
         }
       `}</style>
     </Layout>

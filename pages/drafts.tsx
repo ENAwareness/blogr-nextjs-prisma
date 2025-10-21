@@ -38,8 +38,31 @@ const Drafts: React.FC<Props> = (props) => {
   if (!session) {
     return (
       <Layout>
-        <h1>My Drafts</h1>
-        <div>You need to be authenticated to view this page.</div>
+        <div className="page">
+          <h1>My Drafts</h1>
+          <div className="message">You need to be authenticated to view this page.</div>
+        </div>
+        <style jsx>{`
+          .page {
+            padding-top: 3rem;
+          }
+
+          h1 {
+            font-size: 1.75rem;
+            font-weight: 500;
+            margin: 0 0 2rem 0;
+            color: #2c2c2c;
+          }
+
+          .message {
+            padding: 2rem;
+            background: #ffffff;
+            border: 1px solid #e5e5e5;
+            border-radius: 6px;
+            color: #666666;
+            text-align: center;
+          }
+        `}</style>
       </Layout>
     );
   }
@@ -57,17 +80,20 @@ const Drafts: React.FC<Props> = (props) => {
         </main>
       </div>
       <style jsx>{`
-        .post {
-          background: var(--geist-background);
-          transition: box-shadow 0.1s ease-in;
+        .page {
+          padding-top: 3rem;
         }
 
-        .post:hover {
-          box-shadow: 1px 1px 3px #aaa;
+        h1 {
+          font-size: 1.75rem;
+          font-weight: 500;
+          margin: 0 0 2.5rem 0;
+          color: #2c2c2c;
+          letter-spacing: 0.02em;
         }
 
         .post + .post {
-          margin-top: 2rem;
+          margin-top: 1.5rem;
         }
       `}</style>
     </Layout>

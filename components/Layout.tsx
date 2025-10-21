@@ -25,23 +25,45 @@ const Layout: React.FC<Props> = (props) => (
         padding: 0;
         font-size: 16px;
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-          "Segoe UI Symbol";
-        background: rgba(0, 0, 0, 0.05);
+          "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP",
+          "Yu Gothic", YuGothic, Meiryo, sans-serif;
+        background: #f5f5f5;
+        color: #333333;
+        line-height: 1.8;
+        letter-spacing: 0.02em;
       }
 
       input,
       textarea {
         font-size: 16px;
+        font-family: inherit;
       }
 
       button {
         cursor: pointer;
+        font-family: inherit;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        color: #2c2c2c;
+        font-weight: 500;
+        letter-spacing: 0.03em;
+      }
+
+      a {
+        color: #666666;
+        transition: color 0.2s ease;
+      }
+
+      a:hover {
+        color: #333333;
       }
     `}</style>
     <style jsx>{`
       .layout {
-        padding: 0 2rem;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 2rem 4rem;
       }
     `}</style>
   </div>
