@@ -2,13 +2,44 @@
 
 ## 前置要求
 
-- Node.js 14+
-- PostgreSQL 数据库
-- GitHub 账号（用于 OAuth 登录）
+- **Git** - 版本控制工具
+- **Node.js 14+** - JavaScript 运行环境
+- **PostgreSQL 数据库** - 本地或云端
+- **GitHub 账号** - 用于 OAuth 登录
+- **代码编辑器** - 推荐 VSCode
+
+---
+
+## 步骤 0: 克隆项目到本地
+
+首先需要将代码仓库克隆到你的本地电脑：
+
+```bash
+# 克隆仓库（替换为你的仓库地址）
+git clone https://github.com/ENAwareness/blogr-nextjs-prisma.git
+
+# 进入项目目录
+cd blogr-nextjs-prisma
+
+# 切换到开发分支（如果需要）
+git checkout claude/describe-project-011CUKWbcVnHFpzAjzJo8BS1
+```
+
+**使用 VSCode 打开项目：**
+
+```bash
+# 方式 1: 命令行打开
+code .
+
+# 方式 2: 手动打开
+# 打开 VSCode -> File -> Open Folder -> 选择项目文件夹
+```
 
 ---
 
 ## 步骤 1: 安装依赖
+
+在项目根目录下运行：
 
 ```bash
 npm install
